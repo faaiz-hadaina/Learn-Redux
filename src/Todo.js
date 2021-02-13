@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function Todo({todos}) {
-
+export default function Todo({todo}) {
+console.log(todo)
     return (
+        <div>
         <label>
             <input type="checkbox"></input>
-           {todos[0].name}
+           {todo.name}
         </label>
+        </div>
     )
 }
